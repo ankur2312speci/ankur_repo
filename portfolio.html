@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - DigitalEdge</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="index.html" class="logo">
+                        <span class="logo-text">Digital<span class="logo-accent">Edge</span></span>
+                    </a>
+                    <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <ul class="nav-menu" id="navMenu">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item has-mega-menu">
+                            <a href="services.html" class="nav-link">Services <i class="arrow-down"></i></a>
+                            <div class="mega-menu">
+                                <div class="container">
+                                    <div class="mega-menu-content">
+                                        <div class="mega-menu-column">
+                                            <h3>Our Services</h3>
+                                            <ul>
+                                                <li><a href="services.html#seo">SEO Optimization</a></li>
+                                                <li><a href="services.html#ppc">PPC Advertising</a></li>
+                                                <li><a href="services.html#social">Social Media Marketing</a></li>
+                                                <li><a href="services.html#content">Content Marketing</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="mega-menu-column">
+                                            <h3>Specialized</h3>
+                                            <ul>
+                                                <li><a href="services.html#email">Email Marketing</a></li>
+                                                <li><a href="services.html#analytics">Analytics & Reporting</a></li>
+                                                <li><a href="services.html#consulting">Marketing Consulting</a></li>
+                                                <li><a href="services.html#branding">Brand Strategy</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="mega-menu-column">
+                                            <h3>Resources</h3>
+                                            <ul>
+                                                <li><a href="blog.html">Blog & Insights</a></li>
+                                                <li><a href="portfolio.html">Case Studies</a></li>
+                                                <li><a href="services.html#pricing">Pricing Plans</a></li>
+                                                <li><a href="contact.html">Get Started</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="portfolio.html" class="nav-link active">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="about.html" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="blog.html" class="nav-link">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html" class="nav-link">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html" class="btn btn-primary">Get Started</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Portfolio Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Our Portfolio</h1>
+            <p>Success stories from brands we've helped grow</p>
+        </div>
+    </section>
+
+    <!-- Portfolio Filter -->
+    <section class="portfolio-filter">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="seo">SEO</button>
+                <button class="filter-btn" data-filter="ppc">PPC</button>
+                <button class="filter-btn" data-filter="social">Social Media</button>
+                <button class="filter-btn" data-filter="content">Content</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Grid -->
+    <section class="portfolio-section">
+        <div class="container">
+            <div class="portfolio-grid" id="portfolioGrid">
+                <!-- Case Study 1 -->
+                <div class="case-study-card" data-category="seo">
+                    <div class="case-study-image">
+                        <div class="case-study-overlay">
+                            <a href="case-study-1.html" class="btn btn-primary">View Case Study</a>
+                        </div>
+                        <div class="case-placeholder">📈</div>
+                    </div>
+                    <div class="case-study-content">
+                        <span class="case-tag">SEO</span>
+                        <h3>E-Commerce Brand SEO Transformation</h3>
+                        <p>Increased organic traffic by 350% in 6 months through comprehensive SEO strategy</p>
+                        <div class="case-results">
+                            <div class="result-item">
+                                <span class="result-value">+350%</span>
+                                <span class="result-label">Traffic Growth</span>
+                            </div>
+                            <div class="result-item">
+                                <span class="result-value">#1</span>
+                                <span class="result-label">Top Rankings</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case Study 2 -->
+                <div class="case-study-card" data-category="ppc">
+                    <div class="case-study-image">
+                        <div class="case-study-overlay">
+                            <a href="case-study-2.html" class="btn btn-primary">View Case Study</a>
+                        </div>
+                        <div class="case-placeholder">💰</div>
+                    </div>
+                    <div class="case-study-content">
+                        <span class="case-tag">PPC</span>
+                        <h3>SaaS Company PPC Campaign</h3>
+                        <p>Reduced cost per acquisition by 60% while scaling ad spend 3x</p>
+                        <div class="case-results">
+                            <div class="result-item">
+                                <span class="result-value">-60%</span>
+                                <span class="result-label">CPA Reduction</span>
+                            </div>
+                            <div class="result-item">
+                                <span class="result-value">3x</span>
+                                <span class="result-label">Scale</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case Study 3 -->
+                <div class="case-study-card" data-category="social">
+                    <div class="case-study-image">
+                        <div class="case-study-overlay">
+                            <a href="case-study-3.html" class="btn btn-primary">View Case Study</a>
+                        </div>
+                        <div class="case-placeholder">📱</div>
+                    </div>
+                    <div class="case-study-content">
+                        <span class="case-tag">Social Media</span>
+                        <h3>Fashion Brand Social Media Growth</h3>
+                        <p>Grew Instagram following from 10K to 500K in 12 months</p>
+                        <div class="case-results">
+                            <div class="result-item">
+                                <span class="result-value">500K</span>
+                                <span class="result-label">Followers</span>
+                            </div>
+                            <div class="result-item">
+                                <span class="result-value">8.5%</span>
+                                <span class="result-label">Engagement</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case Study 4 -->
+                <div class="case-study-card" data-category="content">
+                    <div class="case-study-image">
+                        <div class="case-study-overlay">
+                            <a href="case-study-4.html" class="btn btn-primary">View Case Study</a>
+                        </div>
+                        <div class="case-placeholder">✍️</div>
+                    </div>
+                    <div class="case-study-content">
+                        <span class="case-tag">Content</span>
+                        <h3>B2B Content Marketing Strategy</h3>
+                        <p>Generated 2,000+ qualified leads through strategic content marketing</p>
+                        <div class="case-results">
+                            <div class="result-item">
+                                <span class="result-value">2K+</span>
+                                <span class="result-label">Leads Generated</span>
+                            </div>
+                            <div class="result-item">
+                                <span class="result-value">45%</span>
+                                <span class="result-label">Conversion</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case Study 5 -->
+                <div class="case-study-card" data-category="seo">
+                    <div class="case-study-image">
+                        <div class="case-study-overlay">
+                            <a href="case-study-5.html" class="btn btn-primary">View Case Study</a>
+                        </div>
+                        <div class="case-placeholder">🚀</div>
+                    </div>
+                    <div class="case-study-content">
+                        <span class="case-tag">SEO</span>
+                        <h3>Local Business SEO Success</h3>
+                        <p>Dominated local search results and increased foot traffic by 200%</p>
+                        <div class="case-results">
+                            <div class="result-item">
+                                <span class="result-value">+200%</span>
+                                <span class="result-label">Foot Traffic</span>
+                            </div>
+                            <div class="result-item">
+                                <span class="result-value">#1-3</span>
+                                <span class="result-label">Local Rankings</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case Study 6 -->
+                <div class="case-study-card" data-category="ppc">
+                    <div class="case-study-image">
+                        <div class="case-study-overlay">
+                            <a href="case-study-6.html" class="btn btn-primary">View Case Study</a>
+                        </div>
+                        <div class="case-placeholder">💎</div>
+                    </div>
+                    <div class="case-study-content">
+                        <span class="case-tag">PPC</span>
+                        <h3>Healthcare PPC Campaign</h3>
+                        <p>Achieved 400% ROI with targeted healthcare advertising campaigns</p>
+                        <div class="case-results">
+                            <div class="result-item">
+                                <span class="result-value">400%</span>
+                                <span class="result-label">ROI</span>
+                            </div>
+                            <div class="result-item">
+                                <span class="result-value">$2.50</span>
+                                <span class="result-label">Cost Per Lead</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Be Our Next Success Story?</h2>
+                <p>Let's discuss how we can help you achieve similar results</p>
+                <a href="contact.html" class="btn btn-primary btn-large">Start Your Project</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>DigitalEdge</h3>
+                    <p>Transforming businesses through innovative digital marketing strategies.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                        <a href="#" aria-label="LinkedIn">💼</a>
+                        <a href="#" aria-label="Instagram">📷</a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html#seo">SEO Optimization</a></li>
+                        <li><a href="services.html#ppc">PPC Advertising</a></li>
+                        <li><a href="services.html#social">Social Media</a></li>
+                        <li><a href="services.html#content">Content Marketing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>📧 hello@digitaledge.com</li>
+                        <li>📞 +1 (555) 123-4567</li>
+                        <li>📍 123 Marketing St, Digital City</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 DigitalEdge. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/portfolio.js"></script>
+</body>
+</html>
+

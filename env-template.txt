@@ -1,0 +1,32 @@
+# ============================================
+# Email Configuration
+# ============================================
+# Copy this file to .env and fill in your details
+# For Gmail, you'll need to generate an App Password
+# Steps:
+# 1. Go to: Google Account > Security
+# 2. Enable 2-Step Verification (if not already enabled)
+# 3. Go to: App passwords
+# 4. Generate a new app password for "Mail"
+# 5. Copy the 16-character password and paste it below
+
+EMAIL_USER=your-email@gmail.com
+EMAIL_PASS=your-app-password-here
+
+# ============================================
+# Server Configuration
+# ============================================
+# Port number (default: 3000)
+# Change if port 3000 is already in use
+
+PORT=3000
+
+# ============================================
+# Recipient Email (Optional)
+# ============================================
+# The email address where contact form submissions will be sent
+# If not set, defaults to EMAIL_USER above
+# Uncomment and set if you want a different recipient:
+
+# RECIPIENT_EMAIL=hello@digitaledge.com
+
